@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway&display=swap");
+:root {
+    /*### Primary*/
+    --Very_Dark_Blue: hsl(243, 87%, 12%);
+    --Desaturated_Blue: hsl(238, 22%, 44%);
+    /*### Accent*/
+    --Bright_Blue: hsl(224, 93%, 58%);
+    --Moderate_Cyan: hsl(170, 45%, 43%);
+    /*### Neutral*/
+    --Light_Grayish_Blue: hsl(240, 75%, 98%);
+    --Light_Gray: hsl(0, 0%, 75%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+}
+header {
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+header nav ul {
+    display: flex;
+    justify-content: end;
+}
+nav ul > li {
+    padding: 1rem 2rem;
+    list-style-type: none;
+}
+ul li > a {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+    color: var(--Very_Dark_Blue);
+}
+main #part_1,
+#part_2,
+#part_3 {
+    display: flex;
+    align-items: center;
+    padding: 5rem;
+    gap: 50px;
+}
+main h2 {
+    padding: 1.5rem 0;
+    font-size: 3rem;
+}
+main p {
+    font-size: 1.3rem;
+}
+#part_1 div:last-child {
+    display: flex;
+    justify-content: center;
+}
+.illustration_1,
+.illustration_2 {
+    width: 80%;
+}
+input {
+    border-radius: 5px;
+    border: 1px solid var(--Light_Gray);
+    padding-left: 20px;
+    width: 50%;
+    height: 50px;
+}
+input[type="email"]::placeholder {
+    font-family: "Raleway", sans-serif;
+    color: var(--Light_Gray);
+    padding: 1px 15px;
+}
+
+main button {
+    background: var(--Bright_Blue);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+}
+main button a {
+    color: var(--Light_Grayish_Blue);
+}
+
+#part_2 {
+    background: url(../images/bg-curve-desktop.svg) no-repeat top;
+    background-size: cover;
+}
+#part_3 {
+    align-items: center;
+    background: var(--Desaturated_Blue);
+    color: white;
+    height: 300px;
+}
+footer {
+    background: var(--Very_Dark_Blue);
+    color: white;
+    padding: 5rem;
+}
+footer #footer_logo {
+    padding-bottom: 5rem;
+}
+#footer__parts {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+}
+#footer__parts div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    gap: 20px;
+}
+.foot_divs {
+    flex-direction: column;
+    gap: 20px;
+}
