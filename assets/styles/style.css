@@ -76,7 +76,6 @@ input[type="email"]::placeholder {
     color: var(--Light_Gray);
     padding: 1px 15px;
 }
-
 main button {
     background: var(--Bright_Blue);
     font-family: "Open Sans", sans-serif;
@@ -115,7 +114,9 @@ main button a {
     align-items: center;
     background: var(--Desaturated_Blue);
     color: white;
-    height: 300px;
+}
+#part_3 div p {
+    padding: 0.9rem 0;
 }
 #email {
     width: 200px;
@@ -138,19 +139,20 @@ footer #footer_logo {
 #footer__parts div {
     width: 100%;
     display: flex;
-    justify-content: flex-start;
     text-align: center;
     gap: 20px;
 }
 .foot_divs {
     flex-direction: column;
-    gap: 20px;
+    padding: 1rem 0;
+}
+#social_medias {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
 }
 #social_medias a {
     font-size: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #fff;
     padding: 15px;
     border: 0.1rem solid white;
@@ -171,5 +173,13 @@ footer #footer_logo {
     #part_1 div:last-child,
     .lastdiv-part2 {
         display: none;
+    }
+    #footer__parts {
+        display: block;
+    }
+    #footer__parts div {
+        display: flex;
+        text-align: start;
+        gap: 20px;
     }
 }
