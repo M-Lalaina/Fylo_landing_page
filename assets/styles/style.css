@@ -62,7 +62,7 @@ main p {
 }
 .illustration_1,
 .illustration_2 {
-    width: 80%;
+    width: 90%;
 }
 input {
     border-radius: 5px;
@@ -89,16 +89,37 @@ main button {
 main button a {
     color: var(--Light_Grayish_Blue);
 }
-
+#part_1 div:first-child,
+#part_2 div:first-child {
+    display: none;
+}
 #part_2 {
     background: url(../images/bg-curve-desktop.svg) no-repeat top;
     background-size: cover;
+}
+#box_2 {
+    width: 60%;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    background-color: white;
+    background-size: 2rem;
+    background-position: top 1vh left 4vh;
+    border-radius: 0.7rem;
+}
+#profil_avatar {
+    margin: 0.9rem 0;
+    width: 5rem;
+    border-radius: 100%;
 }
 #part_3 {
     align-items: center;
     background: var(--Desaturated_Blue);
     color: white;
     height: 300px;
+}
+#email {
+    width: 200px;
+    margin-bottom: 0.9rem;
 }
 footer {
     background: var(--Very_Dark_Blue);
@@ -124,4 +145,31 @@ footer #footer_logo {
 .foot_divs {
     flex-direction: column;
     gap: 20px;
+}
+#social_medias a {
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 15px;
+    border: 0.1rem solid white;
+    border-radius: 100%;
+}
+@media screen and (max-width: 992px) {
+    main #part_1,
+    #part_2,
+    #part_3 {
+        display: block;
+        align-items: center;
+        padding: 5rem;
+    }
+    #part_1 div:first-child,
+    #part_2 div:first-child {
+        display: block;
+    }
+    #part_1 div:last-child,
+    .lastdiv-part2 {
+        display: none;
+    }
 }
